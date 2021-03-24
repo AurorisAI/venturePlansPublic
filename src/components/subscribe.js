@@ -1,7 +1,6 @@
 import React from "react";
 import "./layout.css";
-import logoImg from "../images/ebookImage.png";
-import VPImg from "../images/logo.png";
+import bookImg from "../images/slikaKnjige.png";
 
 
 const Subscribe = () => (
@@ -16,13 +15,7 @@ const Subscribe = () => (
           </h3>
           <div className="subscribeText">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              interdum quam libero, ut dignissim <br></br>nisi varius in. Nulla
-              pellentesque justo neque, ac aliquam elit imperdiet non.
-              Pellentesque porttitor hendrerit diam quis placerat. Fusce vitae
-              orci lobortis, pharetra libero at, fringilla ante. Maecenas est
-              purus, fermentum vel metus eget, molestie ultrices risus. Aliquam
-              sit amet sagittis p
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis quam <br></br>fermentum, rutrum sem quis, vulputate nisl. Aenean nec est enim. Donec<br></br> velit quam, sodales in nulla facili
             </p>
           </div>
 
@@ -41,6 +34,7 @@ const Subscribe = () => (
                       <div className="input-group-append">
                         <button
                           className="btn btn-primary d-flex align-items-center"
+                          className="amna"
                           type="button"
                         >
                           Get it FREE<i class="fa fa-long-arrow-right ml-2"></i>
@@ -57,7 +51,7 @@ const Subscribe = () => (
         <div class="">
           <br></br>
           <div>
-            <img src={logoImg} className="slikaKnjige" alt=""></img>
+            <img src={bookImg} className="slikaKnjige" alt=""></img>
           </div>
         </div>
       </div>

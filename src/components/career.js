@@ -18,8 +18,9 @@ const Career = () => (
 
           <button className="quoteButton">START HERE</button>
         </div>
+   
     </div>
-    </div>
+  </div>
 );
 
 export default Career;

@@ -16,7 +16,7 @@ import Sectors from "../components/sectors";
 import Insights from "../components/insights";
 import Footer from "../components/footer";
 import Logos from "../components/logos";
-
+import ImageSlider from "../components/imageSlider";
 
 
 const IndexPage = () => (
@@ -24,6 +24,8 @@ const IndexPage = () => (
     <Header />
     <SEO title="Home" />
     <CustomJumbotron />
+    <ImageSlider/> 
+
     <Comp/>
     <div className="container">
       <p className="verticalLineLeft" 
