@@ -34,7 +34,7 @@ const Subscribe = () => (
                       <div className="input-group-append">
                         <button
                           className="btn btn-primary d-flex align-items-center"
-                          className="amna"
+                          className="email"
                           type="button"
                         >
                           Get it FREE<i class="fa fa-long-arrow-right ml-2"></i>

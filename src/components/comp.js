@@ -1,6 +1,6 @@
 import React from "react";
 import "./layout.css";
-import logoImg from "../images/compImage.png"
+import Img from "../images/imageBelowImageSlider.png"
 
 const Comp = () => (
 
@@ -42,7 +42,7 @@ const Comp = () => (
             <div class="">
               <br></br>  
                 <div class="subheading">
-                    <img src={logoImg} className="slika" alt=""></img>
+                    <img src={Img} className="slika" alt=""></img>
 
                 </div>    </div>
 
