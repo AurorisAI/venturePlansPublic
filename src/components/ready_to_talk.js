@@ -3,6 +3,7 @@ import React from "react";
 import { BiDownArrow } from "react-icons/bi";
 import { Dropdown } from "react-bootstrap";
 
+/* Uncomment submitForm and then fix allignment */
 const ReadyToTalk = () => (
   <div className="container-fluid scyscraperJumbotron">
     <div className="row">
@@ -21,7 +22,7 @@ const ReadyToTalk = () => (
         <br />
         <br />
         <br />
-        <div className="submitForm">
+        {/* <div className="submitForm">
           <input
             className="form-control fullNameInput"
             type="text"
@@ -41,7 +42,7 @@ const ReadyToTalk = () => (
           />
           <br />
           <button className="submitButton">Submit</button>
-        </div>
+        </div> */}
       </div>
     </div>
   </div>
