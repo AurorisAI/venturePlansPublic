@@ -28,7 +28,8 @@
   margin-top: 100px;
   font-weight: 400;
 }
-.quoteButton,.careerButton {
+.quoteButton,
+.careerButton {
   margin-top: 20px;
   border: 2px solid white;
   background-color: transparent;
@@ -54,14 +55,9 @@
 
 .navigacija {
   background-color: #1f2935;
+  font-family: "Proxima Nova";
 }
-.officesDropButton,
-.languageDropButton {
-  background-color: transparent;
-  border-color: transparent;
-  font-size: 16px;
-}
-.searchBar {
+.searchBar input {
   background-color: transparent;
   border-color: transparent;
 }
@@ -85,7 +81,7 @@
 }
 .cardHeader {
   height: 120px;
-  background-color:#26aff3;
+  background-color: #26aff3;
 }
 .cardTitle {
   color: white;
@@ -152,8 +148,7 @@
   border-radius: 7px;
   border-spacing: 12;
   width: 200px;
-  color: #53bff6
-  !important;
+  color: #53bff6 !important;
   font-weight: 900;
 }
 .slika {
@@ -173,10 +168,10 @@
 .venturePlans {
   margin-top: 20px;
   font-weight: 500;
-  font-size: 65px; 
+  font-size: 65px;
 }
 .pozadina {
-  background-color: #E0F3FC;
+  background-color: #e0f3fc;
   text-decoration: none;
 }
 .email-input {
@@ -186,14 +181,13 @@
 }
 .email {
   margin-right: 60px;
-  color:white;
+  color: white;
   background-color: #45b6fe;
   font-size: 22;
   font-weight: 600;
-
 }
 .subscription span {
-  color: rgb(220, 219, 219)
+  color: rgb(220, 219, 219);
 }
 .subscribe {
   font-size: 55;
@@ -209,7 +203,6 @@
   margin-right: 0px;
   margin-top: 50px;
   margin-bottom: 100px;
-
 }
 .subscribeText {
   margin-left: 5px;
@@ -227,17 +220,15 @@
 }
 
 .logoSlika {
-
   text-decoration: none;
   list-style-type: none;
   width: 50%;
   height: 50%;
   border-radius: 50%;
-  border: 2px solid ;
+  border: 2px solid;
 
   margin-left: 40px;
-      object-fit: cover;
-
+  object-fit: cover;
 }
 .heading2 {
   font-size: 30px;
@@ -253,22 +244,22 @@
   color: gray;
 }
 .row12 {
- justify-content: center;
- margin-left:  0px;
+  justify-content: center;
+  margin-left: 0px;
 }
 .circle {
   border-radius: 50%;
   height: 8em;
   object-fit: fill;
   width: 8em;
-  border: 2px solid;  
+  border: 2px solid;
   margin-left: 60px;
 }
 .avatarCorner {
   position: absolute;
-    top: -30px;
-    left: -40px;
-    width: 100px;
+  top: -30px;
+  left: -40px;
+  width: 100px;
 }
 .consultationButton {
   background-color: #53bff6;
@@ -301,20 +292,21 @@
   height: 300px;
 }
 .cardDiv {
-  position: relative; 
+  position: relative;
   height: 300px;
 }
 .cardText2 {
   padding-left: 45px;
-  padding-right: 12px; 
-  height:100%;
+  padding-right: 12px;
+  height: 100%;
 }
 .cardTextDiv2 {
   bottom: 0;
   position: absolute;
 }
 .scyscraperJumbotron {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/ready_to_talk.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/ready_to_talk.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 860px;
@@ -367,8 +359,8 @@
   height: 60px;
 }
 .submitForm {
- margin-top: 250px;
- margin-left: 250px;
+  margin-top: 250px;
+  margin-left: 250px;
 }
 .submitButton {
   border: 2px solid white;
@@ -395,37 +387,37 @@
   text-decoration: none;
 }
 .vertical-menu a:hover {
-  background-color: #EDEDED;
+  background-color: #ededed;
 }
 .vertical-menu a.active {
   background-color: #34b1ef;
   color: white;
 }
 .colVideo {
-  margin-left:50px;
+  margin-left: 50px;
   margin-top: 100px;
 }
 .sectorsImageMain {
-  height: 600px; 
-  background-image: url('../images/sectors.png');
+  height: 600px;
+  background-image: url("../images/sectors.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
 .sectorsNumber {
   color: rgb(67, 203, 221);
-  font-size: 45px; 
+  font-size: 45px;
   margin-right: 10px;
 }
 .sectorsParagraph {
-  font-size: 20px; 
+  font-size: 20px;
   text-align: center;
   margin-top: 18px;
 }
 .sectorsImage {
-  width: 30%; 
-  height: auto; 
-  display: block; 
-  margin: auto
+  width: 30%;
+  height: auto;
+  display: block;
+  margin: auto;
 }
 .insightsPosition {
   /* width: 100%; */
@@ -434,12 +426,12 @@
 }
 .customcol {
   color: white;
-  margin-left:50px;
+  margin-left: 50px;
 }
 .btn {
   background-color: #00cff4;
   font-size: 0.78rem;
-  border: 0px
+  border: 0px;
 }
 .subscribe2 {
   color: white;
@@ -454,30 +446,34 @@
   margin-bottom: 50px;
   margin-top: 50px;
 }
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
   background-color: #00a1f1 !important;
 }
 /* Pomjeriti searchbar udesno */
-.searchBar.form-control {
-  margin-right: 15px;
-  right: 200px;
+.searchBar {
   position: absolute;
+  right: 10px;
+  top: 10px;
 }
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
   color: pink;
 }
 .nav-link {
-  color:white;
+  color: white;
   font-weight: 400;
 }
 .workWithUs {
-  border-bottom: 4px  solid #00a1f1;
+  border-bottom: 4px solid #00a1f1;
   color: white;
   margin-right: 100px;
 }
 .footerLower {
   margin-left: 50px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 150px;
   padding-bottom: 70px;
 }
@@ -489,5 +485,25 @@
   position: absolute;
   width: 40%;
   margin-left: 580px;
-  display: block; 
+  display: block;
+}
+.navbar-nav button {
+  background-color: transparent !important;
+  font-size: 16px;
+}
+.navbar-nav button::after {
+  color: #00a1f1;
+}
+.contact-info-btn {
+  width: 236px;
+  height: 50px;
+  font-size: 14;
+  font-weight: 600;
+}
+.navbar li:not(:first-child) {
+  font-weight: bold;
+  font-size: 16px;
+}
+.navbar li:not(:first-child) > a {
+  padding: 0px;
 }

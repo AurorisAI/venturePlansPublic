@@ -36,5 +36,12 @@ module.exports = {
         path: `./src/data/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Proxima Nova\:600`],
+        display: "swap",
+      },
+    },
   ],
-}
+};
