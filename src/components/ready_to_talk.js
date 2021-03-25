@@ -6,23 +6,22 @@ import { Dropdown } from "react-bootstrap";
 /* Uncomment submitForm and then fix allignment */
 const ReadyToTalk = () => (
   <div className="container-fluid scyscraperJumbotron">
-    <div className="row">
-      <div className="column">
-        <h1 className="readyToTalkHeader">Ready to talk?</h1>
-        <p className="talkFor">I would like to talk to your experts for:</p>
+    <div class="row">
+      <div class="col">
+        <div className="readyToTalkHeader">Ready to talk?</div>
+
+        <div className="talkFor">I would like to talk to your experts for:</div>
+
         <button
-            className="selectAServiceButton">
-            Select a service                              <BiDownArrow />
-          </button>
+          className="selectAServiceButton">
+          Select a service         <BiDownArrow />
+        </button>
       </div>
-      <div className="column">
+      <div class="col">
         <p className="capitalMarkets">
           Experienced in capital markets, a client-<br></br>first culture, and potent track-record
         </p>
-        <br />
-        <br />
-        <br />
-        {/* <div className="submitForm">
+        <div className="submitForm">
           <input
             className="form-control fullNameInput"
             type="text"
@@ -42,7 +41,7 @@ const ReadyToTalk = () => (
           />
           <br />
           <button className="submitButton">Submit</button>
-        </div> */}
+        </div>
       </div>
     </div>
   </div>
