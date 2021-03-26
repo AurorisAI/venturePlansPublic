@@ -23,7 +23,7 @@ const IndexPage = () => (
     <Header />
     <SEO title="Home" />
     <CustomJumbotron />
-    {/* <ImageSlider/>  */}
+    <ImageSlider />
 
     <Comp />
     <div className="container">
