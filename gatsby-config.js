@@ -39,7 +39,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Proxima Nova\:600`],
+        fonts: [`Proxima Nova\:600,400`],
         display: "swap",
       },
     },
