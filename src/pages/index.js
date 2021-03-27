@@ -16,14 +16,13 @@ import Sectors from "../components/sectors";
 import Insights from "../components/insights";
 import Footer from "../components/footer";
 import Logos from "../components/logos";
-import ImageSlider from "../components/imageSlider";
+import Tabs from "../components/imageSlider";
 
 const IndexPage = () => (
   <div>
     <Header />
     <SEO title="Home" />
-    <CustomJumbotron />
-    <ImageSlider />
+    <Tabs />
 
     <Comp />
     <div className="container">

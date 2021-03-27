@@ -631,3 +631,251 @@
   opacity: 0;
   pointer-events: none;
 }
+
+/*SLIDER*/
+.bloc-tabs {
+  display: flex;
+  font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: -0.05px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  padding: 54px 12% 1px;
+  z-index: 1;
+  margin-top: -120px;
+  align-items: center;
+  position: center;
+}
+.tabs {
+  padding: 15px;
+  text-align: center;
+  width: fit-content;
+  background: transparent;
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  color: white;
+  border: none;
+}
+
+.active-tabs  {
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  color: white;
+  opacity: 1;
+}
+
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 3px;
+  background: rgb(88, 147, 241);
+}
+.content-tabs img{
+  width: 1500px;
+  height: 120%;
+}
+.content {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: relative;
+}
+.content .card-text{
+  width: 100%;
+  height: 100%;
+}
+.active-content {
+  display: block;
+  position: relative;
+}
+.card-title{
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.08;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+.card-text{
+  color: white;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+.card-text:hover, active{
+  text-decoration: none;
+}
+.sliderBtn{
+  width: 332px;
+  height: 76px;
+  border-radius: 6px;
+  border: solid 2px #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.65;
+  letter-spacing: -0.04px;
+  text-align: center;
+  color: #ffffff;
+  background-color: transparent;
+}
+.topcolorimage{
+  position:absolute;
+  width:100%;
+  background-color: rgb(32, 42, 54);
+  bottom:0;
+  left:0;
+  padding-left:15px;
+  z-index:5;
+}
+.fristslidertext{
+  margin-top: -625px;
+  margin-bottom: 120px;
+  padding: 70px;
+}
+
+#dropdown-basic:hover{
+
+}
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .card-title{font-size: 22px;}
+  .sliderBtn{
+    width: 182px;
+    height: 46px;
+    border-radius: 6px;
+    border: solid 2px #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.65;
+    letter-spacing: -0.04px;
+    text-align: center;
+    color: #ffffff;
+    background-color: transparent;
+  }
+  .bloc-tabs {
+    display: flex;
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: -0.05px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    z-index: 1;
+    margin-top: -100px;
+    align-items: center;
+    position: center;
+  }
+  .tabs {
+    padding: 15px;
+    text-align: center;
+    width: fit-content;
+    background: transparent;
+    cursor: pointer;
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+    color: white;
+    border: none;
+  }
+
+  .active-tabs  {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    color: white;
+    opacity: 1;
+  }
+
+  .active-tabs::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 2px);
+    height: 3px;
+    background: rgb(88, 147, 241);
+  }
+  .content-tabs img{
+    width: 1500px;
+    height: 120%;
+  }
+  .content {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    height: 350px;
+    display: none;
+    position: relative;
+  }
+  .content .card-text{
+    width: 100%;
+    height: 100%;
+  }
+  .active-content {
+    display: block;
+    position: relative;
+  }
+  .card-title{
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.08;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+  }
+  .card-text{
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .card-text:hover, active{
+    text-decoration: none;
+  }
+  .sliderBtn{
+    width: 150px;
+    height: 50px;
+    border-radius: 6px;
+    border: solid 2px #ffffff;
+    font-size: 13px;
+    font-weight: 450;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.65;
+    letter-spacing: -0.04px;
+    text-align: center;
+    color: #ffffff;
+    background-color: transparent;
+    white-space: nowrap;
+  }
+  .fristslidertext{
+    margin-top: -400px;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
