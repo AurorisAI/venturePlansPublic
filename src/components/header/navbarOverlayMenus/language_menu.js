@@ -4,7 +4,7 @@ import Flags from "country-flag-icons/react/3x2";
 
 function LanguageMenu() {
   return (
-    <Container fluid className="languages-overlay-menu">
+    <Container fluid className=" overlay-menu languages-overlay-menu">
       <Row>
         <Col xl={3}>
           <h4>Global</h4>

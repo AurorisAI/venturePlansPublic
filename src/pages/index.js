@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import SEO from "../components/seo";
-import Header from "../components/header";
+import Header from "../components/header/header";
 import CustomJumbotron from "../components/custom_jumbotron";
 import CoreValues from "../components/core_values";
 import CompanyOverview from "../components/company_overview";

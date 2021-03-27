@@ -1,0 +1,116 @@
+.navigation {
+  background-color: #1f2935;
+  font-family: "Proxima Nova";
+}
+.navbar-nav button {
+  background-color: transparent !important;
+  font-size: 16px;
+  outline: none;
+}
+.navbar-nav button::after {
+  color: #00a1f1;
+}
+/* Pomjeriti searchbar udesno */
+.searchBar {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.searchBar input {
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-hamburger-menu {
+  color: #00a1f1;
+  margin: -25px -20px 0px 45px;
+  cursor: pointer;
+}
+.contact-info-btn {
+  width: 236px;
+  height: 50px;
+  font-size: 14;
+  font-weight: 600;
+}
+.logo {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.navbar-menu-country-flags {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  padding-bottom: 5px;
+}
+
+.overlay-menu .list-group {
+  max-width: 100%;
+  overflow: hidden;
+}
+.overlay-menu .list-group-item {
+  background-color: inherit;
+  border: none;
+  width: fit-content;
+  padding: 5px;
+  font-size: 17px;
+  font-weight: 400;
+}
+.overlay-menu .navbar-overlay-submenu {
+  font-size: 14px;
+  padding-left: 22px;
+}
+.languages-overlay-menu .list-group-item {
+  font-size: 17px;
+  padding-left: 20px;
+  border-left: 2px solid white;
+}
+.languages-overlay-menu h4 {
+  padding-left: 20px;
+  height: 40px;
+}
+.navbar-menu-items {
+  padding-top: 40px;
+  list-style-type: none;
+}
+.navbar-menu-items li {
+  color: white !important;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.navbar-menu-items > li > div {
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+.navbar-menu-items > li > div:hover {
+  top: -5px;
+}
+@media (max-width: 1200px) {
+  .navbar-menu-items {
+    display: inline;
+  }
+  .navbar-menu-items li {
+    display: inline-flex;
+    margin: 10px;
+  }
+  .navbar-collapse.collapse.show {
+    text-align: center;
+  }
+  .contact-info-btn {
+    width: 45%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .navbar-hamburger-menu {
+    margin-right: 30px;
+  }
+  .contact-info-btn {
+    width: 45%;
+  }
+}
+@media (max-width: 495px) {
+  .searchBar {
+    display: none;
+  }
+}

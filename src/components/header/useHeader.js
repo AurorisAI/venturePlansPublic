@@ -1,16 +1,26 @@
-import { useState, useRef } from "react";
+import { useState, useCallback } from "react";
 import {
   navbarOptionNames,
-  navbarOptions,
   businessPlanMenu,
   financingMenu,
-} from "../utils/constants/header";
+} from "../../utils/constants/header";
+import _ from "lodash";
 
 const useHeader = () => {
   const [show, setShow] = useState(false);
   const [content, setContent] = useState();
-  const setMenuContent = e => {
-    switch (e.target.name) {
+  const debouncedSetShowFalse = useCallback(
+    _.debounce(() => {
+      setShow(false);
+    }, 500),
+    []
+  );
+  const setShowWithCancel = useCallback(show => {
+    debouncedSetShowFalse.cancel();
+    setShow(show);
+  }, []);
+  const setMenuContent = content => {
+    switch (content) {
       case navbarOptionNames.BUSINESS_PLAN: {
         setContent(businessPlanMenu);
         break;
@@ -20,14 +30,15 @@ const useHeader = () => {
         break;
       }
       default: {
-        console.log("Not listed in menus");
+        setContent(content);
       }
     }
   };
   return {
     setContent,
     show,
-    setShow,
+    setShowWithCancel,
+    debouncedSetShowFalse,
     content,
     setMenuContent,
   };
