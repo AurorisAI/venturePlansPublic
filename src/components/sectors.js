@@ -21,8 +21,7 @@ const data = [
 const Sectors = () => {
   const [selectedIndex, setSelectedIndex] = useState(4);
   const [elements, setElements] = useState([1, 2, 3, 4, 5, 6, 7]);
-  const changeSelectedOption = (e, data) => {
-    console.log(e.target.id, "id");
+  const changeSelectedOption = e => {
     setSelectedIndex(+e.target.id);
     switch (+e.target.id) {
       case 1: {
