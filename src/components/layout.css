@@ -420,11 +420,11 @@
   text-align: center;
   margin-top: 18px;
 }
-.sectorsImage {
-  width: 30%;
-  height: auto;
-  display: block;
-  margin: auto;
+.sector-progress-bar {
+  margin-top: 20%;
+}
+.sector-progress-bar .progress-bar {
+  background-color: #00b1ff;
 }
 .insightsPosition {
   /* width: 100%; */
@@ -789,6 +789,49 @@ active {
   .fristslidertext {
     margin-top: -400px;
   }
+}
+.selector-options {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 300px;
+  margin-left: 18%;
+  opacity: 0.3;
+  display: flex;
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  /* -webkit-backdrop-filter: blur(5px); */
+  /* backdrop-filter: blur(5px); */
+}
+.selector-options div {
+  align-self: center;
+  margin-left: 5px;
+}
+.selector-options.active-selector-option {
+  opacity: 1;
+  font-size: 21px;
+}
+.selector-options.active-selector-option img {
+  width: 61px;
+  height: 61px;
+}
+.selector-options img {
+  width: 48px;
+  height: 48px;
+}
+
+.selector-options:hover {
+  cursor: pointer;
+}
+.selector-options:nth-child(4) {
+  margin-left: 38%;
+}
+.selector-options:nth-child(2),
+.selector-options:nth-child(6) {
+  margin-left: 30%;
+}
+.selector-options:nth-child(3),
+.selector-options:nth-child(5) {
+  margin-left: 35%;
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
