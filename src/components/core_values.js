@@ -39,7 +39,9 @@ const CoreValues = () => {
     return coreValuesArray;
   }
   return (
-    <div className="container">
+    <div className="container"data-sal="slide-right"
+         data-sal-delay="300"
+         data-sal-easing="ease">
       <p className="valuesAndOverview">
         OUR <span className="blueText">CORE VALUES</span>
       </p>
@@ -53,5 +55,4 @@ const CoreValues = () => {
     </div>
   );
 };
-
 export default CoreValues;

@@ -59,7 +59,10 @@ const Sectors = () => {
   };
   return (
     <div className="container-fluid">
-      <div className="container">
+      <div className="container"
+           data-sal="slide-left"
+           data-sal-delay="300"
+           data-sal-easing="ease">
         <p className="valuesAndOverview">SECTORS WE EXCELLED IN</p>
         <div className="container subheading2">
           Client expertise in 150+ industries, find out how we can help you
@@ -70,7 +73,11 @@ const Sectors = () => {
         <br />
         <br />
       </div>
-      <div className="row">
+
+      <div className="row"
+           data-sal="slide-right"
+           data-sal-delay="300"
+           data-sal-easing="ease">
         <div
           className="col-sm sector-options-container"
           style={{

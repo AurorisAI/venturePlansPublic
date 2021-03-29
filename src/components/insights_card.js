@@ -22,5 +22,4 @@ const InsightsCard = (props) => (
       </Card.Body>
     </Card>
 );
-
 export default InsightsCard;

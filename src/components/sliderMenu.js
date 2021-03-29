@@ -16,5 +16,4 @@ const SliderMenu = () => (
     </div>
 
 );
-
 export default SliderMenu;

@@ -5,7 +5,10 @@ function CompanyOverview() {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="container companyoverview">
+        <div className="container companyoverview"
+             data-sal="slide-down"
+             data-sal-delay="300"
+             data-sal-easing="ease">
             <p className="valuesAndOverview">
                 OUR COMPANY <span className="blueText">OVERVIEW</span>
             </p>

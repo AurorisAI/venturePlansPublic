@@ -264,7 +264,11 @@ class Main extends React.Component {
                 </div>
             );
         }
-        return (<div className="container">
+
+        return (
+            <div className="container" data-sal="slide-up"
+                     data-sal-delay="100"
+                     data-sal-easing="ease">
             <div className="row">
                 <div className="col-sm">
                     <h3 className="subheading">You trusted partner in navigating through<br></br> uncertain times. Let's

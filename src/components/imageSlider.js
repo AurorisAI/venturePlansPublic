@@ -14,7 +14,6 @@ function Tabs() {
     const toggleTab = (index) => {
         setToggleState(index);
     };
-
     return (
         <div>
             <div>
@@ -38,7 +37,7 @@ function Tabs() {
                                 <button className="sliderBtn">REQUEST A QUOTE</button>
                             </div>
                         </div>
-                        </div>
+                    </div>
 
                     <div
                         className={toggleState === 2 ? "content  active-content" : "content"}

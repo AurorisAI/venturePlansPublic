@@ -10,7 +10,7 @@ import Secure from  "../images/secure.png";
 const Footer = () => (
     <div className="container-fluid footer">
             <div className="row" style={{justifyContent:"space-between",padding:"70px"}}>
-                <div style={{float:"left",textAlign:"left"}} className="logo row col-md-6"><img src={Logo}/></div>
+
                 <div style={{float:"right",textAlign:"right"}} className="social row col-md-6">
                     <img src={In}/>
                     <img src={Twitter}/>
@@ -18,6 +18,7 @@ const Footer = () => (
                     <img src={Yt}/>
                 </div>
             </div>
+
             <div className="space" ></div>
             <div className="row col-md-12">
                 <div className="col-md-6" style={{float:"left",textAlign:"left"}}>

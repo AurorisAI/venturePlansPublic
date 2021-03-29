@@ -2,9 +2,11 @@ import React from "react";
 import "./layout.css";
 import bookImg from "../images/slikaKnjige.png";
 
-
 const Subscribe = () => (
-  <div className="container-fluid pozadina">
+  <div className="container-fluid pozadina"
+       data-sal="slide-down"
+       data-sal-delay="300"
+       data-sal-easing="ease">
     <div className="container">
       <div className="row">
         <div className="col-sm">

@@ -9,13 +9,15 @@ import ellipseImg from "../images/Ellipse 3951.png"
 import bbcImg from "../images/bbc.png"
 
 const Consultation = () => (
-  <div className='container-fluid'>
+  <div className='container-fluid'
+       data-sal="slide-down"
+       data-sal-delay="300"
+       data-sal-easing="ease">
     <div className="row1">
       <div className="heading2">
         Start your business today
     </div>
     </div>
-
     <div className="row1">
       <div className="subheading2">
         We've raised more than $100M for our clients
@@ -29,7 +31,6 @@ const Consultation = () => (
     </div>
 
     <br></br>
-
     <div className="row1">
       <div className="asSeenOn">
         AS SEEN ON

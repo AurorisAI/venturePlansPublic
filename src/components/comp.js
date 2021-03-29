@@ -38,7 +38,6 @@ const Question1 = () =>
 
 
                 <div>
-
                 </div>
             </div>
 
