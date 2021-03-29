@@ -13,32 +13,32 @@ const ClientCard = ({ client }) => {
     clientRating.push(ratingStar);
   });
   return (
-    <Card className="clientCard">
-      <img src={sourceImage} className="avatarCorner" alt="" />
-      <Card.Body>
-        <div>
-          <p>{body.length > 250 ? body.slice(0, 249) + "..." : body}</p>
-        </div>
-        <div className="mt-auto">
-          <div style={{ marginBottom: "5px" }}>
-            {clientRating.map((star, index) => (
-              <img key={index} src={star} />
-            ))}
+      <Card className="clientCard">
+        <img src={sourceImage} className="avatarCorner" alt="" />
+        <Card.Body>
+          <div>
+            <p>{body.length > 250 ? body.slice(0, 249) + "..." : body}</p>
           </div>
-          <div className="d-flex">
-            <div className="mt-auto p-1">{source}</div>
-            <div className="ml-auto">
-              <button className="client-card-icon-buttons">
-                <img src={googleLogo} />
-              </button>
-              <button className="client-card-icon-buttons">
-                <img src={editReview} />
-              </button>
+          <div className="mt-auto">
+            <div style={{ marginBottom: "5px" }}>
+              {clientRating.map((star, index) => (
+                  <img key={index} src={star} />
+              ))}
+            </div>
+            <div className="d-flex">
+              <div className="mt-auto p-1">{source}</div>
+              <div className="ml-auto">
+                <button className="client-card-icon-buttons">
+                  <img src={googleLogo} />
+                </button>
+                <button className="client-card-icon-buttons">
+                  <img src={editReview} />
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      </Card.Body>
-    </Card>
+        </Card.Body>
+      </Card>
   );
 };
 export const query = graphql`
