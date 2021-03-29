@@ -2,6 +2,12 @@
   background-color: #1f2935;
   font-family: "Proxima Nova";
 }
+.navbar.navbar-expand-xl {
+  padding: 0px 10px 10px 0px !important;
+}
+.navbar.navbar-expand {
+  padding: 0px 0px 0px 30px !important;
+}
 .navbar-nav button {
   background-color: transparent !important;
   font-size: 16px;
@@ -16,13 +22,21 @@
   right: 10px;
   top: 10px;
 }
-.searchBar input {
+.searchBar > input {
   background-color: transparent;
   border-color: transparent;
+  height: 20px;
+}
+.searchBar > input::-webkit-input-placeholder {
+  color: white;
+}
+.searchBar > input:-moz-placeholder {
+  color: white;
 }
 .navbar-hamburger-menu {
   color: #00a1f1;
-  margin: -25px -20px 0px 45px;
+  margin-right: 10px;
+  margin-bottom: 25px;
   cursor: pointer;
 }
 .contact-info-btn {
@@ -60,10 +74,11 @@
   font-family: "Proxima Nova";
   max-width: 100vw;
   width: 100%;
-  position: relative;
+  position: absolute;
   display: block;
   padding-top: 20px;
   padding-bottom: 20px;
+  z-index: 1;
 }
 .overlay-div h3 {
   width: fit-content;
@@ -83,7 +98,6 @@
   height: 40px;
 }
 .navbar-menu-items {
-  padding-top: 40px;
   list-style-type: none;
 }
 .navbar-menu-items li {

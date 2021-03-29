@@ -13,7 +13,7 @@ import {
 } from "react-bootstrap";
 import NavbarLinksMenu from "./navbarOverlayMenus/navbar_links_menu";
 import LanguageMenu from "./navbarOverlayMenus/language_menu";
-//import logoImg from "../../images/logo.png";
+import logoImg from "../../images/logo.png";
 import "../layout.css";
 import "./headerStyle.css";
 import {
@@ -40,6 +40,9 @@ const Header = ({ siteTitle }) => {
             <Nav.Item>
               <Dropdown>
                 <Dropdown.Toggle
+                  style={{
+                    padding: "0px",
+                  }}
                   id="dropdown-basic"
                   onMouseOver={e => {
                     setContent(headerOverlayContentType.OFFICES);
@@ -100,18 +103,19 @@ const Header = ({ siteTitle }) => {
             </Nav.Item>
           </Nav>
         </Navbar>
-        <div className="pos-f-t">
+        <div className="pos-f-t pl-4">
           <Navbar expand="xl">
             <FaBars className="navbar-hamburger-menu" size={40} />
             <div>
               <li>
-                <a className="navbar-brand" href="#">
-                </a>
+                <Link to="/">
+                  <img src={logoImg} alt="website-logo" />
+                </Link>
               </li>
             </div>
             {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
             <Navbar.Toggle
-              style={{ color: "white" }}
+              style={{ border: "2px solid#00a1f1" }}
               aria-controls="basic-navbar-nav"
             />
             <Navbar.Collapse
