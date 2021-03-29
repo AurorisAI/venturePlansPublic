@@ -7,37 +7,15 @@ import { useStaticQuery, graphql } from "gatsby";
 const ClientsSay = () => {
   const data = useStaticQuery(graphql`
     query ClientsQuery {
-      allClientDataJson {
+      allGoogleReview {
         edges {
           node {
-            name
-            stars
-            text
-            image {
-              childImageSharp {
-                fluid {
-                  src
-                }
-              }
-            }
+            ...ClientInformation
           }
         }
       }
     }
   `);
-
-  function getClients(data) {
-    const clientsArray = [];
-    data.allClientDataJson.edges.forEach((item, index) => {
-      clientsArray.push(
-        <div className="col">
-          <ClientCard cardText={item.node.text} clientName={item.node.name} clientStars={item.node.stars} clientImage={item.node.image.childImageSharp.fluid.src}/>
-          <br />
-        </div>
-      );
-    });
-    return clientsArray;
-  }
 
   return (
     <div className="container-fluid">
@@ -49,8 +27,16 @@ const ClientsSay = () => {
       <br />
       <br />
       <br />
-      <div className="row clientsMarginsAndWidth">
-        {getClients(data)}
+      <div
+        className="row clientsMarginsAndWidth"
+        style={{ overflowX: "scroll", height: "500px" }}
+      >
+        {data.allGoogleReview.edges.map(({ node }, index) => (
+          <div className="col">
+            <ClientCard key={index} client={node} />
+            <br />
+          </div>
+        ))}
       </div>
       <br />
       <br />

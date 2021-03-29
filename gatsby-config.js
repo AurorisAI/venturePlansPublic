@@ -44,5 +44,12 @@ module.exports = {
         display: "swap",
       },
     },
+    {
+      resolve: `gatsby-source-google-reviews-en`,
+      options: {
+        placeId: `ChIJZQXqJCuuEmsRwUVuxPs9RT0`,
+        apiKey: `FBD2A72FEF5845498ED2369E9ADC33EE`,
+      },
+    },
   ],
 };

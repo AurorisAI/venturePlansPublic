@@ -1,26 +1,55 @@
 import * as React from "react";
+import { graphql } from "gatsby";
+import { Card } from "react-bootstrap";
+import _ from "lodash";
+import ratingStar from "../images/rating-star.png";
+import editReview from "../images/edit-review-icon.png";
+import googleLogo from "../images/google-small-icon.png";
 
-import Card from "react-bootstrap/Card";
-import avatarImage from "../images/avatar.png";
-
-const ClientCard = (props) => (
-  <Card className='clientCard'>
-      <div className='cardDiv'>
-          {/* <img src={avatarImage} className="avatarCorner" alt=''/> */}
-          <img src={props.clientImage} className="avatarCorner" alt=''/>
-    <Card.Body>
-      <Card.Text className='cardText2'>
-        <p>
-          {props.cardText}
-        </p>
-        <div className='cardTextDiv2'>
-          <p>{props.clientStars}</p>
-          <p><b>{props.clientName}</b></p>
+const ClientCard = ({ client }) => {
+  const { source, rating, body, sourceImage } = client;
+  let clientRating = [];
+  _.times(rating, () => {
+    clientRating.push(ratingStar);
+  });
+  return (
+    <Card className="clientCard">
+      <img src={sourceImage} className="avatarCorner" alt="" />
+      <Card.Body>
+        <div>
+          <p>{body.length > 250 ? body.slice(0, 249) + "..." : body}</p>
         </div>
-      </Card.Text>
-    </Card.Body>
-    </div>
-  </Card>
-);
+        <div className="mt-auto">
+          <div style={{ marginBottom: "5px" }}>
+            {clientRating.map((star, index) => (
+              <img key={index} src={star} />
+            ))}
+          </div>
+          <div className="d-flex">
+            <div className="mt-auto p-1">{source}</div>
+            <div className="ml-auto">
+              <button className="client-card-icon-buttons">
+                <img src={googleLogo} />
+              </button>
+              <button className="client-card-icon-buttons">
+                <img src={editReview} />
+              </button>
+            </div>
+          </div>
+        </div>
+      </Card.Body>
+    </Card>
+  );
+};
+export const query = graphql`
+  fragment ClientInformation on GoogleReview {
+    id
+    date
+    source
+    rating
+    body
+    sourceImage
+  }
+`;
 
 export default ClientCard;
