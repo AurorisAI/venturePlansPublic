@@ -13,7 +13,7 @@ import {
 } from "react-bootstrap";
 import NavbarLinksMenu from "./navbarOverlayMenus/navbar_links_menu";
 import LanguageMenu from "./navbarOverlayMenus/language_menu";
-import logoImg from "../../images/logo.png";
+//import logoImg from "../../images/logo.png";
 import "../layout.css";
 import "./headerStyle.css";
 import {
@@ -106,7 +106,6 @@ const Header = ({ siteTitle }) => {
             <div>
               <li>
                 <a className="navbar-brand" href="#">
-                  <img src={logoImg} className="img-responsive" alt=""></img>
                 </a>
               </li>
             </div>

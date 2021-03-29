@@ -1,7 +1,6 @@
 import * as React from "react";
-
-import SEO from "../components/seo";
 import Header from "../components/header/header";
+import SEO from "../components/seo";
 import CustomJumbotron from "../components/custom_jumbotron";
 import CoreValues from "../components/core_values";
 import CompanyOverview from "../components/company_overview";
@@ -16,15 +15,15 @@ import Sectors from "../components/sectors";
 import Insights from "../components/insights";
 import Footer from "../components/footer";
 import Logos from "../components/logos";
+import ImageSlider from "../components/imageSlider";
+import Main from "../components/questionnaire";
 import Tabs from "../components/imageSlider";
-
 const IndexPage = () => (
   <div>
-    <Header />
     <SEO title="Home" />
-    <Tabs />
-
-    <Comp />
+    <Header/>
+    <Tabs/>
+    <Main />
     <div className="container">
       <p className="verticalLineLeft" style={{ textAlign: "center" }}>
         Across sectors, we indetify new markets, scale revenue, improve

@@ -35,8 +35,7 @@ const Subscribe = () => (
                         <button
                           className="btn btn-primary d-flex align-items-center"
                           className="email"
-                          type="button"
-                        >
+                          type="button" style={{border:"1px solid transparent",borderRadius:"5px"}}>
                           Get it FREE<i class="fa fa-long-arrow-right ml-2"></i>
                         </button>
                       </div>

@@ -7,13 +7,14 @@ import SkyscraperImg from '../images/skyscraper2.jpg'
 import SimulationImg from '../images/simulation.jpg'
 
 const Insights = () => (
-  <div className="container-fluid" style={{position:'relative'}}>
+  <div className="container-fluid" style={{position:'relative',alignItems:"center",justifyContent:"center"}}>
     <div className="container">
       <p className="valuesAndOverview">OUR LATEST INSIGHTS</p>
     </div>
     <br />
     <br />
     <div className="row insightsPosition">
+        <div className="card-group">
       <div className="col">
         <InsightsCard
           image={StocksImg}  
@@ -41,20 +42,9 @@ const Insights = () => (
         />
         <br />
       </div>
-      <div className="col">
-        <InsightsCard
-          image={SimulationImg}  
-          blueText="How industries can increase job Opportunities with automation"
-          boldText="Redesigned Account Planning Transforms an IT Company's Performance"
-          text="New tools and strategies boost year-on-year growth and reenergize the company's sales pipeline"
-        />
-        <br />
-      </div>
+
     </div>
-    <br />
-    <br />
-    <br />
-    <br />
+    </div>
   </div>
 );
 

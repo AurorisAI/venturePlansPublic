@@ -3,7 +3,7 @@ import * as React from "react";
 import Card from "react-bootstrap/Card";
 
 const CoreValuesCard = (props) => (
-  <Card className="card">
+  <Card className="card border-0">
     <Card.Header className="cardHeader">
       <div className="row">
         <div className="col-8">
@@ -18,8 +18,8 @@ const CoreValuesCard = (props) => (
         </div>
       </div>
     </Card.Header>
-    <div className='cardTextDiv'>
-      <Card.Text className='cardText'>{props.cardText}</Card.Text>
+    <div className='card-body cardTextDiv'>
+      <Card.Text className='card-text' style={{color:"#00000"}}>{props.cardText}</Card.Text>
     </div>
   </Card>
 );

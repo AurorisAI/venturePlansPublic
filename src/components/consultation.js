@@ -26,7 +26,6 @@ const Consultation = () => (
     <div className='container-fluid text-center '>
       {/* <button className="consultationButton"><b>BOOK A FREE CONSULTATION</b></button> */}
       <button type="button" class="btn btn-primary bookDugme"><div class="booktext">BOOK A FREE CONSULTATION</div></button>
-
     </div>
 
     <br></br>
@@ -38,42 +37,10 @@ const Consultation = () => (
     </div>
 
     <br></br>
+  <div className="">
 
-    <div className="row logoRed">
-      <div className="col">
-        <div class="logo">
-          <img class="slika1" src={ellipseImg}></img>
-          <img class="slikaBBC" src={bbcImg}></img>
-        </div>    </div>
+  </div>
 
-      <div className="col">
-      <div class="logo">
-        <img src={ellipseImg}></img>
-        <img class="slikaLA" src={laImg}></img>
-        </div>
-      </div>
-
-      <div className="col">
-      <div class="logo">
-        <img src={ellipseImg}></img>
-        <img class="slikaCBS" src={cbsImg}></img>
-        </div>
-      </div>
-
-      <div className="col">
-      <div class="logo">
-        <img src={ellipseImg}></img>
-        <img class="slikaNBC" src={nbcImg}></img>
-        </div>
-      </div>
-
-      <div className="col">
-      <div class="logo">
-        <img src={ellipseImg}></img>
-        <img class="slikaFOX" src={foxImg}></img>
-        </div>
-      </div>
-    </div>
   </div>
 );
 

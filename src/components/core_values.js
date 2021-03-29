@@ -1,6 +1,7 @@
 import React from "react";
 
 import CoreValuesCard from "./core_values_card";
+import Card from "react-bootstrap/Card";
 
 import "./layout.css";
 
@@ -45,7 +46,9 @@ const CoreValues = () => {
       <br />
       <br />
       <div className="row">
-        {getCoreValues(data)}
+          <div className="card-group">
+              {getCoreValues(data)}
+          </div>
       </div>
     </div>
   );
