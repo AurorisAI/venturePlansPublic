@@ -201,7 +201,6 @@ active {
   color: #ffffff;
   border: none;
   z-index: 1;
-  margin-top: -120px;
   position: absolute;
   bottom: 40px;
   justify-content: space-around;
@@ -277,6 +276,11 @@ active {
   padding-left: 15px;
   z-index: 5;
 }
+@media (max-width: 480px) {
+  .bloc-tabs {
+    font-size: 1rem !important;
+  }
+}
 
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
@@ -284,11 +288,12 @@ active {
     height: 700px;
   }
   .slide-content {
-    margin-top: 40px !important;
+    border: 2px solid red;
+    margin-top: 140px !important;
     padding-top: 0px !important;
   }
   .slide-content h1 {
-    font-size: 25px !important;
+    font-size: 35px !important;
   }
   .slide-content:first-child {
     margin-top: 0px !important;

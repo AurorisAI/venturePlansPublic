@@ -8,6 +8,7 @@ import Img3 from "../../images/digitalTransformation.png";
 import Img4 from "../../images/bigTrends.png";
 import Img5 from "../../images/economicLeaders.png";
 import Fade from "react-reveal/Fade";
+import ScrollContainer from "react-indiana-drag-scroll";
 
 function Tabs() {
   const [toggleState, setToggleState] = useState(1);
@@ -192,8 +193,11 @@ function Tabs() {
               </div>
             </Fade>
           </div>
-          {/* <ScrollContainer className="SKROL_SRANJE"> */}
-          <div className="bloc-tabs">
+          <ScrollContainer
+            vertical={true}
+            hideScrollbars={false}
+            className="SKROL_SRANJE scroll-container bloc-tabs"
+          >
             <button
               // className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
               className="tabs"
@@ -264,8 +268,7 @@ function Tabs() {
               />
               Industries Of the Future
             </button>
-          </div>
-          {/* </ScrollContainer> */}
+          </ScrollContainer>
         </div>
       </div>
     </div>
