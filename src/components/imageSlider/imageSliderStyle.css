@@ -3,6 +3,9 @@
   min-height: 587px;
   position: relative;
 }
+.content.active-content {
+  background-color: #1f2935;
+}
 .tabs {
   padding: 15px;
   text-align: center;

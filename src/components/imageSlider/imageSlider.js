@@ -7,6 +7,7 @@ import Img2 from "../../images/industriesOfFuture.png";
 import Img3 from "../../images/digitalTransformation.png";
 import Img4 from "../../images/bigTrends.png";
 import Img5 from "../../images/economicLeaders.png";
+import Fade from "react-reveal/Fade";
 
 function Tabs() {
   const [toggleState, setToggleState] = useState(1);
@@ -15,7 +16,7 @@ function Tabs() {
     setToggleState(index);
   };
   return (
-    <div>
+    <div style={{ background: "#1f2935" }}>
       <div>
         <div className="content-tabs">
           <div
@@ -23,39 +24,47 @@ function Tabs() {
               toggleState === 1 ? "content  active-content" : "content"
             }
           >
-            <div className="sliderimg">
-              <div className="slide-content">
-                <h1 className="card-title" style={{ color: "white" }}>
-                  DEEP EXPERTISE IN <br></br>CAPITAL RAISING
-                </h1>
-                <a href={"#"} className="findouthow" style={{ color: "white" }}>
-                  FIND OUT HOW
-                  <span style={{ marginLeft: "12px" }}>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      className="bi bi-arrow-right"
-                      viewBox="0 0 16 16"
-                      color="#00a1f1"
+            <Fade big>
+              <div className="sliderimg">
+                <Fade right>
+                  <div className="slide-content">
+                    <h1 className="card-title" style={{ color: "white" }}>
+                      DEEP EXPERTISE IN <br></br>CAPITAL RAISING
+                    </h1>
+                    <a
+                      href={"#"}
+                      className="findouthow"
+                      style={{ color: "white" }}
                     >
-                      <path
-                        fill-rule="evenodd"
-                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                      />
-                    </svg>
-                  </span>
-                </a>
-                <p className="card-text" style={{ color: "white" }}>
-                  Global consulting firm with a speciality in Innovation,
-                  <br></br>
-                  Technology, Digital Transformation, Financing<br></br>
-                  and Revenue Growth.
-                </p>
-                <button className="sliderBtn">REQUEST A QUOTE</button>
+                      FIND OUT HOW
+                      <span style={{ marginLeft: "12px" }}>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          className="bi bi-arrow-right"
+                          viewBox="0 0 16 16"
+                          color="#00a1f1"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                          />
+                        </svg>
+                      </span>
+                    </a>
+                    <p className="card-text" style={{ color: "white" }}>
+                      Global consulting firm with a speciality in Innovation,
+                      <br></br>
+                      Technology, Digital Transformation, Financing<br></br>
+                      and Revenue Growth.
+                    </p>
+                    <button className="sliderBtn">REQUEST A QUOTE</button>
+                  </div>
+                </Fade>
               </div>
-            </div>
+            </Fade>
           </div>
 
           <div
@@ -63,23 +72,31 @@ function Tabs() {
               toggleState === 2 ? "content  active-content" : "content"
             }
           >
-            <div className="sliderimg2">
-              <div
-                className="slide-content"
-                style={{ marginTop: "150px", padding: "70px", color: "white" }}
-              >
-                <h1 className="card-title">INDUSTRIES OF THE FUTURE</h1>
-                <p className="card-text">
-                  Upcoming Industries that will change the job market
-                </p>
-                <a
-                  className="card-text findouthow"
-                  style={{ color: "#00a1f1" }}
-                >
-                  Read more
-                </a>
+            <Fade big>
+              <div className="sliderimg2">
+                <Fade right>
+                  <div
+                    className="slide-content"
+                    style={{
+                      marginTop: "150px",
+                      padding: "70px",
+                      color: "white",
+                    }}
+                  >
+                    <h1 className="card-title">INDUSTRIES OF THE FUTURE</h1>
+                    <p className="card-text">
+                      Upcoming Industries that will change the job market
+                    </p>
+                    <a
+                      className="card-text findouthow"
+                      style={{ color: "#00a1f1" }}
+                    >
+                      Read more
+                    </a>
+                  </div>
+                </Fade>
               </div>
-            </div>
+            </Fade>
           </div>
 
           <div
@@ -87,60 +104,93 @@ function Tabs() {
               toggleState === 3 ? "content  active-content" : "content"
             }
           >
-            <div className="sliderimg3">
-              <div
-                className="slide-content"
-                style={{ marginTop: "150px", padding: "70px", color: "white" }}
-              >
-                <h1 className="card-title">DIGITAL TRANSFROMATION</h1>
-                <p className="card-text">
-                  Preparation for a modern world economy
-                </p>
-                <a className="card-text findouthow" style={{ color: "white" }}>
-                  Read more
-                </a>
+            <Fade big>
+              <div className="sliderimg3">
+                <Fade right>
+                  <div
+                    className="slide-content"
+                    style={{
+                      marginTop: "150px",
+                      padding: "70px",
+                      color: "white",
+                    }}
+                  >
+                    <h1 className="card-title">DIGITAL TRANSFROMATION</h1>
+                    <p className="card-text">
+                      Preparation for a modern world economy
+                    </p>
+                    <a
+                      className="card-text findouthow"
+                      style={{ color: "white" }}
+                    >
+                      Read more
+                    </a>
+                  </div>
+                </Fade>
               </div>
-            </div>
+            </Fade>
           </div>
           <div
             className={
               toggleState === 4 ? "content  active-content" : "content"
             }
           >
-            <div className="sliderimg4">
-              <div
-                className="slide-content"
-                style={{ marginTop: "150px", padding: "70px", color: "white" }}
-              >
-                <h1 className="card-title">BIG TRENDS</h1>
-                <p className="card-text">
-                  How will artificial intelligence impact your industry
-                </p>
-                <a className="card-text findouthow" style={{ color: "white" }}>
-                  Read more
-                </a>
+            <Fade big>
+              <div className="sliderimg4">
+                <Fade right>
+                  <div
+                    className="slide-content"
+                    style={{
+                      marginTop: "150px",
+                      padding: "70px",
+                      color: "white",
+                    }}
+                  >
+                    <h1 className="card-title">BIG TRENDS</h1>
+                    <p className="card-text">
+                      How will artificial intelligence impact your industry
+                    </p>
+                    <a
+                      className="card-text findouthow"
+                      style={{ color: "white" }}
+                    >
+                      Read more
+                    </a>
+                  </div>
+                </Fade>
               </div>
-            </div>
+            </Fade>
           </div>
           <div
             className={
               toggleState === 5 ? "content  active-content" : "content"
             }
           >
-            <div className="sliderimg5">
-              <div
-                className="slide-content"
-                style={{ marginTop: "150px", padding: "70px", color: "white" }}
-              >
-                <h1 className="card-title">ECONOMIC LEADERS</h1>
-                <p className="card-text">
-                  U.S.,CHINA & INDIA Projected GDP Growth
-                </p>
-                <a className="card-text findouthow" style={{ color: "white" }}>
-                  Read more
-                </a>
+            <Fade big>
+              <div className="sliderimg5">
+                <Fade right>
+                  <div
+                    className="slide-content"
+                    style={{
+                      marginTop: "150px",
+                      padding: "70px",
+                      color: "white",
+                    }}
+                  >
+                    <h1 className="card-title">ECONOMIC LEADERS</h1>
+                    <p className="card-text">
+                      U.S.,CHINA & INDIA Projected GDP Growth
+                    </p>
+                    <a
+                      className="card-text findouthow"
+                      style={{ color: "white" }}
+                    >
+                      Read more
+                    </a>
+                  </div>
+                </Fade>
               </div>
-            </div>
+            </Fade>
           </div>
           {/* <ScrollContainer className="SKROL_SRANJE"> */}
           <div className="bloc-tabs">

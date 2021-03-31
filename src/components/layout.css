@@ -33,6 +33,7 @@ html {
 }
 .subheading {
   margin-top: 150px;
+  height: fit-content !important;
   font-size: 30px;
   font-weight: normal;
   font-stretch: normal;
@@ -996,11 +997,6 @@ html {
   }
   .card {
     width: 100%;
-  }
-
-  .subheading {
-    margin-top: -80px;
-    margin-bottom: 80px;
   }
 }
 
