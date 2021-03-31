@@ -1,0 +1,311 @@
+.content-tabs {
+  font-family: "Proxima Nova" !important;
+  min-height: 587px;
+  position: relative;
+}
+.tabs {
+  padding: 15px;
+  text-align: center;
+  width: fit-content;
+  background: transparent;
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  color: white;
+  border: none;
+}
+.active-tabs {
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  color: white;
+  opacity: 1;
+}
+/*-------------BORDER-HOVER-EFFECT*/
+/* .bloc-tabs .tabs {
+  position: relative !important;
+}
+.bloc-tabs .tabs::before,
+.bloc-tabs .tabs::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff;
+}
+.bloc-tabs .tabs:hover::before,
+.bloc-tabs .tabs:hover::after {
+  width: 100%;
+}
+.bloc-tabs .tabs::before,
+.bloc-tabs .tabs::after {
+  transition-delay: 0.2s;
+}
+.bloc-tabs .tabs::before {
+  left: 0;
+  top: 0;
+}
+.bloc-tabs .tabs::after {
+  left: 0;
+  top: 0;
+} */
+/* ---------------------------------------*/
+/*-----------ONCLICK-----------*/
+.bloc-tabs .tabs span {
+  transition-duration: 0.2s !important;
+  /* width: calc(100% + 10px); */
+  width: 0px;
+  max-width: calc(100% + 10px);
+  background-color: white;
+  display: block;
+  margin-bottom: 5px;
+  visibility: visible;
+  height: 5px;
+}
+
+/*-------------------------*/
+.content-tabs .sliderimg {
+  width: 100%;
+  height: 587px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #202a36),
+    url("../../images/jumbotron.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content-tabs .sliderimg div {
+  color: white;
+}
+.content-tabs .sliderimg2 {
+  width: 100%;
+  height: 587px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #202a36),
+    url("../../images/industriesOfFuture.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content-tabs .sliderimg3 {
+  width: 100%;
+  height: 587px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #202a36),
+    url("../../images/digitalTransformation.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content-tabs .sliderimg4 {
+  width: 100%;
+  height: 587px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #202a36),
+    url("../../images/bigTrends.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content-tabs .sliderimg5 {
+  width: 100%;
+  height: 587px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #202a36),
+    url("../../images/economicLeaders.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content .card-text {
+  width: 100%;
+  height: 100%;
+}
+.cardtitle {
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.08;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  white-space: nowrap;
+  left: 0;
+}
+.cardtext {
+  color: white;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.cardtext:hover,
+active {
+  text-decoration: none;
+}
+.sliderBtn {
+  width: 332px;
+  height: 76px;
+  border-radius: 6px;
+  border: solid 2px #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.65;
+  letter-spacing: -0.04px;
+  text-align: center;
+  color: #ffffff;
+  background-color: transparent;
+}
+.topcolorimage {
+  position: absolute;
+  width: 100%;
+  background-color: rgb(32, 42, 54);
+  bottom: 0;
+  left: 0;
+  padding-left: 15px;
+  z-index: 5;
+}
+.slide-content {
+  margin-top: 150px;
+  padding: 70px;
+  color: white;
+}
+.slide-content:first-child {
+  margin-top: 0px;
+}
+
+/* ------------------------*/
+
+.bloc-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: -0.05px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  z-index: 1;
+  margin-top: -120px;
+  position: absolute;
+  bottom: 40px;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* 
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 3px;
+  background: rgb(88, 147, 241); */
+/* } */
+.content-tabs img {
+  width: 1500px;
+  height: 120%;
+}
+.content {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: relative;
+}
+.active-content {
+  display: block;
+  position: relative;
+}
+.card-title {
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.08;
+  letter-spacing: normal;
+  text-align: left;
+}
+.card-text {
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+.card-text:hover,
+active {
+  text-decoration: none;
+}
+
+.sliderBtn {
+  width: 332px;
+  height: 76px;
+  border-radius: 6px;
+  border: solid 2px #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.65;
+  letter-spacing: -0.04px;
+  text-align: center;
+  color: #ffffff;
+  background-color: transparent;
+}
+.topcolorimage {
+  position: absolute;
+  width: 100%;
+  background-color: rgb(32, 42, 54);
+  bottom: 0;
+  left: 0;
+  padding-left: 15px;
+  z-index: 5;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .content-tabs {
+    height: 700px;
+  }
+  .slide-content {
+    margin-top: 40px !important;
+    padding-top: 0px !important;
+  }
+  .slide-content h1 {
+    font-size: 25px !important;
+  }
+  .slide-content:first-child {
+    margin-top: 0px !important;
+  }
+  .slide-content:first-child button {
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  /* .bloc-tabs {
+    bottom: 0px;
+  } */
+}
+/* .bloc-tabs .tabs:active .progres-bar-span {
+  width: calc(100% + 1.5rem) !important;
+}
+.bloc-tabs .tabs:focus .progres-bar-span {
+  width: calc(100% + 1.5rem) !important;
+} */
+.show-loader-span {
+  width: calc(100% + 1.5rem) !important;
+}

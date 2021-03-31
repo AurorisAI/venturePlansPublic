@@ -17,52 +17,27 @@ const data = [
   { text: "Consumer Products & Services", icon: WifiIcon },
   { text: "Financing", icon: WifiIcon },
 ];
-
+const rotate = function (array, n) {
+  array.unshift.apply(array, array.splice(n, array.length));
+  return array;
+};
 const Sectors = () => {
-  const [selectedIndex, setSelectedIndex] = useState(4);
+  const [selectedElement, setSelectedElement] = useState(4);
   const [elements, setElements] = useState([1, 2, 3, 4, 5, 6, 7]);
   const changeSelectedOption = e => {
-    setSelectedIndex(+e.target.id);
-    switch (+e.target.id) {
-      case 1: {
-        setElements([5, 6, 7, 1, 2, 3, 4]);
-        break;
-      }
-      case 2: {
-        setElements([6, 7, 1, 2, 3, 4, 5]);
-        break;
-      }
-      case 3: {
-        setElements([7, 1, 2, 3, 4, 5, 6]);
-        break;
-      }
-      case 4: {
-        setElements([1, 2, 3, 4, 5, 6, 7]);
-        break;
-      }
-      case 5: {
-        setElements([2, 3, 4, 5, 6, 7, 1]);
-        break;
-      }
-      case 6: {
-        setElements([3, 4, 5, 6, 7, 1, 2]);
-        break;
-      }
-      case 7: {
-        setElements([4, 5, 6, 7, 1, 2, 3]);
-        break;
-      }
-      default: {
-        console.log("No Option");
-      }
-    }
+    const el = +e.target.id;
+    setSelectedElement(el);
+    const index = elements.indexOf(el);
+    setElements(rotate(elements, index - 3));
   };
   return (
     <div className="container-fluid">
-      <div className="container"
-           data-sal="slide-left"
-           data-sal-delay="300"
-           data-sal-easing="ease">
+      <div
+        className="container"
+        data-sal="slide-left"
+        data-sal-delay="300"
+        data-sal-easing="ease"
+      >
         <p className="valuesAndOverview">SECTORS WE EXCELLED IN</p>
         <div className="container subheading2">
           Client expertise in 150+ industries, find out how we can help you
@@ -73,11 +48,12 @@ const Sectors = () => {
         <br />
         <br />
       </div>
-
-      <div className="row"
-           data-sal="slide-right"
-           data-sal-delay="300"
-           data-sal-easing="ease">
+      <div
+        className="row"
+        data-sal="slide-right"
+        data-sal-delay="300"
+        data-sal-easing="ease"
+      >
         <div
           className="col-sm sector-options-container"
           style={{
@@ -89,7 +65,7 @@ const Sectors = () => {
           {elements.map(el => (
             <div
               className={
-                selectedIndex === el
+                selectedElement === el
                   ? "selector-options active-selector-option"
                   : "selector-options"
               }
@@ -97,8 +73,10 @@ const Sectors = () => {
               id={el}
               onClick={changeSelectedOption}
             >
-              <img id={el} src={data[el - 1].icon} />
-              <div id={el}>{data[el - 1].text}</div>
+              <img alt={el} id={el} src={data[el - 1].icon} />
+              <div alt={el} id={el}>
+                {data[el - 1].text}
+              </div>
             </div>
           ))}
         </div>
@@ -117,7 +95,7 @@ const Sectors = () => {
               </div>
               <ProgressBar
                 className="sector-progress-bar"
-                now={10 * selectedIndex}
+                now={10 * selectedElement}
               />
             </div>
             <div className="col">
@@ -130,7 +108,7 @@ const Sectors = () => {
               </div>
               <ProgressBar
                 className="sector-progress-bar"
-                now={4 * selectedIndex}
+                now={4 * selectedElement}
               />
             </div>
             <div className="w-100"></div>
@@ -144,7 +122,7 @@ const Sectors = () => {
               </div>
               <ProgressBar
                 className="sector-progress-bar"
-                now={13 * selectedIndex}
+                now={13 * selectedElement}
               />
             </div>
             <div className="col">
@@ -157,7 +135,7 @@ const Sectors = () => {
               </div>
               <ProgressBar
                 className="sector-progress-bar"
-                now={5 * selectedIndex}
+                now={5 * selectedElement}
               />
             </div>
           </div>

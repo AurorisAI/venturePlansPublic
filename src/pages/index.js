@@ -15,14 +15,16 @@ import Sectors from "../components/sectors";
 import Insights from "../components/insights";
 import Footer from "../components/footer";
 import Logos from "../components/logos";
-import ImageSlider from "../components/imageSlider";
+// import ImageSlider from "../components/imageSlider";
 import Main from "../components/questionnaire";
-import Tabs from "../components/imageSlider";
+// import Tabs from "../components/imageSlider";
+import Tabs from "../components/imageSlider/imageSlider";
+
 const IndexPage = () => (
   <div>
     <SEO title="Home" />
-    <Header/>
-    <Tabs/>
+    <Header />
+    <Tabs />
     <Main />
     <div className="container">
       <p className="verticalLineLeft" style={{ textAlign: "center" }}>
