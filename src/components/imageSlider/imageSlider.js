@@ -70,7 +70,7 @@ function Tabs() {
 
           <div
             className={
-              toggleState === 2 ? "content  active-content" : "content"
+              toggleState === 5 ? "content  active-content" : "content"
             }
           >
             <Fade big>
@@ -164,7 +164,7 @@ function Tabs() {
           </div>
           <div
             className={
-              toggleState === 5 ? "content  active-content" : "content"
+              toggleState === 2 ? "content  active-content" : "content"
             }
           >
             <Fade big>
@@ -195,7 +195,7 @@ function Tabs() {
           </div>
           <ScrollContainer
             vertical={true}
-            hideScrollbars={false}
+            // hideScrollbars={false}
             className="SKROL_SRANJE scroll-container bloc-tabs"
           >
             <button
