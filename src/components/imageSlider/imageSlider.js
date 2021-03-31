@@ -195,8 +195,7 @@ function Tabs() {
           </div>
           <ScrollContainer
             vertical={true}
-            // hideScrollbars={false}
-            className="SKROL_SRANJE scroll-container bloc-tabs"
+            className="scroll-container bloc-tabs"
           >
             <button
               // className={toggleState === 1 ? "tabs active-tabs" : "tabs"}

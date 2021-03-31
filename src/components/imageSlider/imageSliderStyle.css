@@ -66,6 +66,9 @@
   visibility: visible;
   height: 5px;
 }
+.bloc-tabs:hover {
+  cursor: grab;
+}
 
 /*-------------------------*/
 .content-tabs .sliderimg {
@@ -203,7 +206,7 @@ active {
   z-index: 1;
   position: absolute;
   bottom: 40px;
-  justify-content: initial;
+  justify-content: space-between;
   width: 90%;
   flex-wrap: nowrap;
   white-space: nowrap;
@@ -280,6 +283,12 @@ active {
   left: 0;
   padding-left: 15px;
   z-index: 5;
+}
+
+@media (max-width: 1200px) {
+  .bloc-tabs {
+    justify-content: initial;
+  }
 }
 
 /* Media Query for Mobile Devices */
