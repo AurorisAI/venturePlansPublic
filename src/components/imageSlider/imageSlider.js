@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import "./imageSliderStyle.css";
 
@@ -12,6 +12,17 @@ import ScrollContainer from "react-indiana-drag-scroll";
 
 function Tabs() {
   const [toggleState, setToggleState] = useState(1);
+
+  useEffect(() => {
+    const current = toggleState;
+    const interval = setInterval(() => {
+      current == 5 ? setToggleState(1) : setToggleState(current + 1);
+    }, 5000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [toggleState]);
 
   const toggleTab = index => {
     setToggleState(index);

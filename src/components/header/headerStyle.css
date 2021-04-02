@@ -1,6 +1,7 @@
 .navigation {
   background-color: #1f2935;
   font-family: "Proxima Nova";
+  height: 125px;
 }
 .navbar.navbar-expand-xl {
   padding: 0px 10px 10px 0px !important;
