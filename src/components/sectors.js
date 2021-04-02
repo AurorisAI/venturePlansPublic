@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./layout.css";
 
-import ImgB from "../images/circleB.png";
+import marijuana from "../images/marijuana.png";
 import ImgA from "../images/circleA.png";
 import ImgC from "../images/circleC.png";
 import { ProgressBar } from "react-bootstrap";

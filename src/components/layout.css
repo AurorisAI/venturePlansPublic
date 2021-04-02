@@ -356,6 +356,9 @@ html {
   height: 100%;
   width: 100%;
   margin-bottom: 0%;
+  background-image: url("../images/career.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .logoSlika {
@@ -619,8 +622,8 @@ html {
 }
 .insightsPosition {
   /* width: 100%; */
-  margin-left: 100px;
-  margin-right: 100px;
+  display: flex;
+  justify-content: center;
 }
 .customcol {
   color: white;
@@ -675,9 +678,25 @@ html {
   margin-right: 30px;
 }
 .womanImage {
-  width: 40%;
-  margin-left: 580px;
-  display: block;
+  height: 550px;
+  margin-top: 50px;
+}
+.careerTitle {
+  margin-top: 230px;
+  font-size: 24px;
+}
+.careerVenturePlans {
+  margin-top: 30px;
+  font-size: 75px;
+}
+.careerButton {
+  width: 332px;
+  height: 76px;
+  font-size: 13px;
+  font-weight: normal;
+  background-color: #00a1f1;
+  border: 1px solid white;
+  margin-top: 30px;
 }
 
 .logoRed {
@@ -970,15 +989,6 @@ html {
     margin-top: -230px;
     justify-content: left;
   }
-  .careerButton {
-    width: 232px;
-    height: 56px;
-    font-size: 13px;
-    font-weight: normal;
-  }
-  .venturePlans {
-    font-size: 30px;
-  }
   .career {
     font-size: 15px;
   }
@@ -1046,6 +1056,65 @@ html {
 .selector-options:nth-child(5) {
   margin-left: 35%;
 }
+.seenElementsContainer {
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.seenElements {
+  border-radius: 50%;
+  border: 1px solid gray;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.seenElementsLa {
+  border-radius: 50%;
+  border: 1px solid gray;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.seenElementsCBS {
+  border-radius: 50%;
+  border: 1px solid gray;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.seenElementsNBC {
+  border-radius: 50%;
+  border: 1px solid gray;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 55px;
+  padding-right: 55px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.seenElementsFOX {
+  border-radius: 50%;
+  border: 1px solid gray;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  padding-left: 55px;
+  padding-right: 55px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {

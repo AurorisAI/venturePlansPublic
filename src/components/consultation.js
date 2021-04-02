@@ -1,5 +1,6 @@
 import React from "react";
 import "./layout.css";
+import bbc from "../images/BBC.png"
 
 import laImg from "../images/laTimes.png"
 import cbsImg from "../images/cbs.png"
@@ -34,7 +35,14 @@ const Consultation = () => (
     <div className="row1">
       <div className="asSeenOn">
         AS SEEN ON
+      </div>
     </div>
+    <div class="row seenElementsContainer">
+      <div class="seenElements"><img src={bbc}></img></div>
+      <div class="seenElementsLa"><img src={laImg}></img></div>
+      <div class="seenElementsCBS"><img src={cbsImg}></img></div>
+      <div class="seenElementsNBC"><img src={nbcImg}></img></div>
+      <div class="seenElementsFOX"><img src={foxImg}></img></div>
     </div>
 
     <br></br>

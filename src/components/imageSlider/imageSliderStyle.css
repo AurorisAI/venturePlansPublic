@@ -56,11 +56,11 @@
 /* ---------------------------------------*/
 /*-----------ONCLICK-----------*/
 .bloc-tabs .tabs span {
-  transition-duration: 0.2s !important;
+  transition-duration: 0.5s !important;
   /* width: calc(100% + 10px); */
   width: 0px;
   max-width: calc(100% + 10px);
-  background-color: white;
+  background-color: #00a1f1;
   display: block;
   margin-bottom: 5px;
   visibility: visible;

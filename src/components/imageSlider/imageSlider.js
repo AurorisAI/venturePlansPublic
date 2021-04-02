@@ -213,6 +213,7 @@ function Tabs() {
               className="tabs"
               onClick={() => toggleTab(1)}
             >
+              Work with us
               <span
                 className={
                   toggleState === 1
@@ -220,13 +221,13 @@ function Tabs() {
                     : "progres-bar-span"
                 }
               />
-              Work with us
             </button>
             <button
               // className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
               className="tabs"
               onClick={() => toggleTab(2)}
             >
+              Economic Leaderss
               <span
                 className={
                   toggleState === 2
@@ -234,13 +235,13 @@ function Tabs() {
                     : "progres-bar-span"
                 }
               />
-              Economic Leaderss
             </button>
             <button
               // className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
               className="tabs"
               onClick={() => toggleTab(3)}
             >
+              Digital Transformation
               <span
                 className={
                   toggleState === 3
@@ -248,13 +249,13 @@ function Tabs() {
                     : "progres-bar-span"
                 }
               />
-              Digital Transformation
             </button>
             <button
               // className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
               className="tabs"
               onClick={() => toggleTab(4)}
             >
+              Big Trends
               <span
                 className={
                   toggleState === 4
@@ -262,13 +263,13 @@ function Tabs() {
                     : "progres-bar-span"
                 }
               />
-              Big Trends
             </button>
             <button
               // className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
               className="tabs"
               onClick={() => toggleTab(5)}
             >
+              Industries Of the Future
               <span
                 className={
                   toggleState === 5
@@ -276,7 +277,6 @@ function Tabs() {
                     : "progres-bar-span"
                 }
               />
-              Industries Of the Future
             </button>
           </ScrollContainer>
         </div>
