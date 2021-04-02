@@ -7,17 +7,16 @@ import { Dropdown } from "react-bootstrap";
 const ReadyToTalk = () => (
   <div className="container-fluid scyscraperJumbotron">
     <div class="row">
-      <div class="col">
+      <div class="col" >
         <div className="readyToTalkHeader">Ready to talk?</div>
 
         <div className="talkFor">I would like to talk to your experts for:</div>
-
         <button
           className="selectAServiceButton">
           Select a service         <BiDownArrow />
         </button>
       </div>
-      <div class="col">
+      <div class="col" style={{marginLeft:"20px"}}>
         <p className="capitalMarkets">
           Experienced in capital markets, a client-<br></br>first culture, and potent track-record
         </p>

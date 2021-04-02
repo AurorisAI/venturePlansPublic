@@ -39,6 +39,7 @@
     "react-indiana-drag-scroll": "^1.8.1",
     "react-reveal": "^1.2.2",
     "react-slick": "^0.28.1",
+    "reactjs-media": "^1.5.1",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {

@@ -580,17 +580,17 @@ html {
   margin-left: 340px;
   margin-top: 100px;
 }
-.vertical-menu a {
+.vertical-menu p {
   background-color: white;
   color: black;
   display: block;
   padding: 20px;
   text-decoration: none;
 }
-.vertical-menu a:hover {
+.vertical-menu p:hover {
   background-color: #ededed;
 }
-.vertical-menu a.active {
+.vertical-menu p.active {
   background-color: #34b1ef;
   color: white;
 }
