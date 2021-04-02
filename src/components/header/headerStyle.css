@@ -120,12 +120,17 @@
   .navbar-menu-items {
     display: inline;
   }
+  .navigation {
+    height: unset;
+  }
   .navbar-menu-items li {
     display: inline-flex;
     margin: 10px;
   }
   .navbar-collapse.collapse.show {
     text-align: center;
+    z-index: 2;
+    background-color: #1f2935;
   }
   .contact-info-btn {
     width: 45%;
@@ -137,6 +142,9 @@
   }
   .contact-info-btn {
     width: 45%;
+  }
+  .navigation {
+    height: unset;
   }
 }
 @media (max-width: 495px) {
